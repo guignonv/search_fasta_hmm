@@ -77,8 +77,8 @@ Default e-value threshold.
 our $EVALUE_INDEX = 0;
 our $HMM_FILE_INDEX = 1;
 our $HMM_NAME_INDEX = 2;
-# our $HMMSEARCH_COMMAND = 'hmmsearch';
-our $HMMSEARCH_COMMAND = 'module load hmmer/2.3.2; singularity exec /nfs/work/agap_id-bin/img/HMMER/2.3.2/hmmer.2.3.2.img hmmsearch';
+our $HMMSEARCH_COMMAND = 'hmmsearch';
+# our $HMMSEARCH_COMMAND = 'module load hmmer/2.3.2; singularity exec /nfs/work/agap_id-bin/img/HMMER/2.3.2/hmmer.2.3.2.img hmmsearch';
 our $DEFAULT_EVALUE = '1e-3';
 
 
@@ -329,6 +329,7 @@ GetOptions('help|?'           => \$help,
 ) or pod2usage(1);
 if ($help) {pod2usage('-verbose' => 1, '-exitval' => 0);}
 if ($man) {pod2usage('-verbose' => 2, '-exitval' => 0);}
+if (!$hmm_dir || !@fasta_filenames) {pod2usage(1);}
 
 # Check genome files.
 my $i = 0;
