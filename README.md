@@ -8,11 +8,11 @@ Scans FASTA files with HMM profiles using HMM search.
 Clone the git repository.
 Edit `search_gelp_hmm.pl` and adjust the line with your system as needed:
 
-  our $HMMSEARCH_COMMAND = 'hmmsearch';
+    our $HMMSEARCH_COMMAND = 'hmmsearch';
 
 and you can run search_gelp_hmm:
 
-  perl search_gelp_hmm.pl -...
+    perl search_gelp_hmm.pl -...
 
 
 # Prerequisites
@@ -26,18 +26,18 @@ and you can run search_gelp_hmm:
 
 Create a directory four output (optional):
 
-  mkdir gelp_hmm_test
+    mkdir gelp_hmm_test
 
 Run the script:
 
-  perl search_gelp_hmm.pl -d examples/hmm -f examples/fasta/example_gelp.fa -o ./gelp_hmm_test -a -e 1e-3 -t 8
+    perl search_gelp_hmm.pl -d examples/hmm -f examples/fasta/example_gelp.fa -o ./gelp_hmm_test -a -e 1e-3 -t 8
 
 
 # Contributing
 
-Alberto CENCI
-Valentin GUIGNON
-Mathieu ROUARD
+* Alberto CENCI
+* Valentin GUIGNON
+* Mathieu ROUARD
 
 
 # License
