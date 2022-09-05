@@ -30,7 +30,7 @@ Create a directory four output (optional):
 
 Run the script:
 
-    perl search_gelp_hmm.pl -d examples/hmm -f examples/fasta/example_gelp.fa -o ./gelp_hmm_test -a -e 1e-3 -t 8
+    perl search_gelp_hmm.pl -d data/hmm -f data/fasta/example_gelp.fa -o ./gelp_hmm_test -a -e 1e-3 -t 8
 
 
 # Contributing
